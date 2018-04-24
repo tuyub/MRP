@@ -1,0 +1,40 @@
+
+<center><h2>Listado de materiales</h2></center>
+
+<!--
+<div ng-repeat="tarea in ctl.tareas">
+  <ng-tarea></ng-tarea>
+</div>
+
+<br>
+-->
+
+
+<center><h3></h3></center>
+<table >
+              <theader>
+                  <b><th>Nombre</th></b>
+                  <b><th>cantidadexistente</th></b>
+                  <b><th>ubicacion</th></b>
+                  <b><th>estatus</th></b>
+                  <b><th>provedor</th></b>
+                 
+                  <b><th>Acción</th></b>
+                  
+              </theader>
+          <tbody>
+              <tr ng-repeat="c in ctl.materiales" >
+                    <td><a title="Detalles" href="#!/material/{{c._id}}" >{{c.nombre}}</a> </td>
+                    <td>{{c.cantidadexistente}}</td>
+                    <td>{{c.ubicacion}}</td>
+                    <td>{{c.estatus}}</td>
+                    <td>{{c.provedor}}</td>
+                  
+                   
+                    <td> <button class="btn btn-danger btn-sm" type="button"  ng-click="ctl.selectMaterial(c)">Eliminar</button> </td>  
+                    
+              </tr>
+              
+          </tbody>
+</table>
+      

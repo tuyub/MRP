@@ -1,0 +1,40 @@
+
+<center><h2>Listado de formulas</h2></center>
+
+<!--
+<div ng-repeat="tarea in ctl.tareas">
+  <ng-tarea></ng-tarea>
+</div>
+
+<br>
+-->
+
+
+<center><h3></h3></center>
+<table >
+              <theader>
+                  <b><th>Nombre</th></b>
+                  <b><th>material1</th></b>
+                  <b><th>material2</th></b>
+                  <b><th>producto</th></b>
+                  <b><th>numerodeserie</th></b>
+                 
+                  <b><th>Acción</th></b>
+                  
+              </theader>
+          <tbody>
+              <tr ng-repeat="c in ctl.formulas" >
+                    <td><a title="Detalles" href="#!/formula/{{c._id}}" >{{c.nombre}}</a> </td>
+                    <td>{{c.material1}}</td>
+                    <td>{{c.material2}}</td>
+                    <td>{{c.producto}}</td>
+                    <td>{{c.numerodeserie}}</td>
+                  
+                   
+                    <td> <button class="btn btn-danger btn-sm" type="button"  ng-click="ctl.selectFormula(c)">Eliminar</button> </td>  
+                    
+              </tr>
+              
+          </tbody>
+</table>
+      

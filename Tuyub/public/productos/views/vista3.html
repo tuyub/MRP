@@ -1,0 +1,41 @@
+
+<center><h2>Listado de productos</h2></center>
+
+<!--
+<div ng-repeat="tarea in ctl.tareas">
+  <ng-tarea></ng-tarea>
+</div>
+
+<br>
+-->
+
+
+<center><h3></h3></center>
+<table >
+              <theader>
+                  <b><th>Nombre</th></b>
+                  <b><th>formula</th></b>
+                  <b><th>cantidad</th></b>
+                  <b><th>almacen</th></b>
+                  <b><th>fechaproducto</th></b>
+                  <b><th>fechacad</th></b>
+                 
+                  <b><th>Acción</th></b>
+                  
+              </theader>
+          <tbody>
+              <tr ng-repeat="c in ctl.productos" >
+                    <td><a title="Detalles" href="#!/producto/{{c._id}}" >{{c.nombre}}</a> </td>
+                    <td>{{c.formula}}</td>
+                    <td>{{c.cantidad}}</td>
+                    <td>{{c.almacen}}</td>
+                    <td>{{c.fechaproducto}}</td>
+                    <td>{{c.fechacad}}</td>
+                   
+                    <td> <button class="btn btn-danger btn-sm" type="button"  ng-click="ctl.selectProducto(c)">Eliminar</button> </td>  
+                    
+              </tr>
+              
+          </tbody>
+</table>
+      
